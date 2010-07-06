@@ -31,6 +31,9 @@ sub run {
     if ( $options->{pid} ) {
         $extra{pid_file} = $options->{pid};
     }
+    if ( $options->{log_file} ) {
+        $extra{log_file} = $options->{log_file};
+    }
     if ( $options->{daemonize} ) {
         $extra{setsid} = $extra{background} = 1;
     }
